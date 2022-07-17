@@ -1,9 +1,25 @@
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper{
+  width: 90%;
+}
 .group_select{
   position: relative;
-  width: fit-content;
+  width: 100% !important;
   max-height: 56px;
   z-index: 9999;
   transition: all linear 0.3s;
+  display: flex;
+  justify-content: center;
+}
+.group_select_wrapper{
+width: 74%;
+  @media(max-width: 1400px){
+    width: 100%;
+  }
 }
 .arrow_btn{
   background-image: url('../app/media/arrow_btn.svg');
@@ -100,8 +116,31 @@ color: #FFFFFFDE;
     color: #ffffff;
   }
 }
-
-.cart_car{
-  height: 20rem;
-  border: 1px solid black;
+.spinner{
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner_wrapper{
+  height: 80px;
+  width: 80px;
+  background-image: url('../app/media/spinner-solid.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spinner infinite linear 1s;
+}
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }

@@ -23,6 +23,7 @@ const carsSlice = createSlice({
   initialState: {
     models: [] as any[],
     cars: [] as any[],
+    loading: false,
   },
   reducers: {
     getServices(state:any, action:any) {
@@ -40,12 +41,19 @@ const carsSlice = createSlice({
     },
 
     [getCurrentCar.pending]: (state:any, action:any) => {
+      console.log("this is pending");
+      
+      console.log(state.loading);
+      
+      state.loading = true
+      console.log(state.loading);
     },
     [getCurrentCar.fulfilled]: (state:any, { payload }:any) => {
-    console.log(payload);    
     state.cars = payload.list
+    state.loading = false
     },
     [getCurrentCar.rejected]: (state:any, action: any) => {
+      state.loading = false
     },
   }
 });

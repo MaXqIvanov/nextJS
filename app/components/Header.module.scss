@@ -1,6 +1,70 @@
-.header{
-    height: 6rem;
-    @media(max-width:1200px){
-        height: 5rem;
+.search{
+    background-image: url('../media/172546_search_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+.svg{
+    margin-left: 10px;
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+}
+.favorite{
+    background-image: url('../media/heart-gray.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+}
+.img_car{
+    background-image: url('../media/car.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+}
+
+.btn{
+    width: 220px;
+    height: 48px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    /* UI Properties */
+    background: transparent linear-gradient(258deg, #11998E 0%, #38EF7D 100%) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    span{
+      transform: matrix(-1, 0, 0, -1, 0, 0);
+      text-align: center;
+      font: normal normal medium 10px/13px Roboto;
+      font-size: x-small;
+      letter-spacing: 2px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      opacity: 1;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+}
+.number{
+    margin-right: 1rem;
+    text-align: left;
+    font: normal normal bold 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #303030;
+    span{
+        margin-right: 0.5rem;
+        color: var(--unnamed-color-acb8bf);
+        text-align: left;
+        font: normal normal normal 12px/24px Roboto;
+        letter-spacing: 0px;
+        color: #ACB8BF;
     }
 }

@@ -1,5 +1,6 @@
 $grid-columns: 24;
 @import '../node_modules/bootstrap-scss/bootstrap-grid.scss';
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
 html,
 body {
   padding: 0;
@@ -25,4 +26,16 @@ a {
   background-color: #b8e5ff; /* цвет плашки */
   border-radius: 20px; /* закругления плашки */
   border: 3px solid #b8e5ff; /* padding вокруг плашки */
+}
+.nav-link{
+  color: var(--unnamed-color-303030);
+  text-align: left;
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0px;
+  color: #303030;
+  opacity: 1;
+}
+.navbar{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

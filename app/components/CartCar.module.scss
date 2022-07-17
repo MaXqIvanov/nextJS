@@ -25,9 +25,13 @@
     position: relative;
     min-height: 29rem;
     @media(max-width: 1400px){
-      min-width: 19rem;
-      max-width: 19rem;
+      min-width: 17.7rem;
+      max-width: 17.7rem;
       min-height: fit-content;
+    }
+    @media(max-width: 630px){
+      min-width: 17rem;
+      max-width: 17rem;
     }
     .favorite{
       display: none;
